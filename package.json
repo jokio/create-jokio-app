@@ -1,18 +1,18 @@
 {
-  "name": "create-next-app",
-  "description": "Create Next.js apps in one command",
-  "version": "0.5.2",
+  "name": "create-jokio-app",
+  "description": "create jokio apps in one command",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "create-next-app": "./bin/create-next-app"
+    "create-jokio-app": "./bin/create-jokio-app"
   },
   "engines": {
     "node": ">=4"
   },
-  "repository": "segmentio/create-next-app",
+  "repository": "jokio/create-jokio-app",
   "bugs": {
-    "url": "https://github.com/segmentio/create-next-app/issues"
+    "url": "https://github.com/jokio/create-jokio-app/issues"
   },
   "dependencies": {
     "ansi-escapes": "^2.0.0",
@@ -28,11 +28,8 @@
     "promise": "^7.1.1"
   },
   "keywords": [
-    "next",
-    "react",
-    "next.js",
-    "create-next-app",
-    "create-react-app",
+    "jokio",
+    "create-jokio-app",
     "boilerplate"
   ]
 }
