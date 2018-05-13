@@ -34,6 +34,10 @@ yarn create jokio-app myapp-ui --nextjs
 ```
 yarn create jokio-app myapp-graph --graphql
 ```
-
-
+With NPM:
+```
+npm i -g create-jokio-app
+create-jokio-app myapp
+```
+#
 Questions? Feedback? [Please let us know](https://github.com/segmentio/create-next-app/issues/new)
