@@ -1,13 +1,23 @@
 # Create Jokio App
-
 The easiest way to create a [jokio](https://github.com/jokio/jokio) app
 
-Options:
-* `--nextjs` - To create nextjs project template
-* `--graphql` - To create graphql project template
-* `--nextjs --graphql` - To create nextjs + graphql project template
+## Features:
+Those features are out of the box in default template :
+* Configured dev environement ([nodemon](https://github.com/remy/nodemon))
+* Configured test environement ([jest](https://github.com/facebook/jest))
+* Configured [EditorConfig](https://github.com/editorconfig/editorconfig)
+* Configured CI/CD ([travis](http://travis-ci.org))
+* Configured Linting [TSLint](https://github.com/palantir/tslint)
+* Last but not least: 100% type safety! ([TypeScript](https://github.com/Microsoft/TypeScript))
 
-Note: Creates default project template, if options aren't passed
+
+## Additional Options:
+* `--nextjs` - To create nextjs project template (all features included)
+* `--graphql` - To create graphql project template (all features included)
+* `--nextjs --graphql` - To create nextjs + graphql project template (all features included)
+
+Note: Creates default (empty) project template, if there will be no options passed
+
 
 ## How to use:
 You don't need to install anything, just you've to use yarn :)
