@@ -24,6 +24,8 @@ You don't need to install anything, just you've to use yarn :)
 ```
 yarn create jokio-app myapp
 ```
+
+## More examples:
 ```
 yarn create jokio-app myapp-ui --nextjs
 ```
