@@ -24,9 +24,12 @@ program
   .on('--help', messages.help)
   .parse(process.argv)
 
-const example = program.example
+// const example = program.example
+const nextjs = program.nextjs
+const graphql = program.graphql
 
 createJokioApp({
   projectName,
-  example
+  nextjs,
+  graphql,
 })
