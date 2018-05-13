@@ -17,8 +17,10 @@ program
   .action(function (name) {
     projectName = name
   })
-  .option('-e, --example <example-path>', messages.exampleHelp())
-  .allowUnknownOption()
+  // .option('-e, --example <example-path>', messages.exampleHelp())
+  .option('--nextjs', 'with next.js (typescript configured)')
+  .option('--graphql', 'with graphql')
+  // .allowUnknownOption()
   .on('--help', messages.help)
   .parse(process.argv)
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "create-jokio-app": "./bin/create-jokio-app"
+    "create-jokio-app": "./lib/create-jokio-app"
   },
   "engines": {
     "node": ">=4"
