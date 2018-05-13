@@ -9,7 +9,7 @@ Those features are out of the box in default template :
 * Configured test environement ([jest](https://github.com/facebook/jest))
 * Configured [EditorConfig](https://github.com/editorconfig/editorconfig)
 * Configured CI/CD ([travis](http://travis-ci.org))
-* Configured Linting [TSLint](https://github.com/palantir/tslint)
+* Configured Linting ([TSLint](https://github.com/palantir/tslint))
 * Last but not least: 100% type safety! ([TypeScript](https://github.com/Microsoft/TypeScript))
 
 
