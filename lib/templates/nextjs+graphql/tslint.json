@@ -104,7 +104,7 @@
 		],
 		"semicolon": [
 			true,
-			"always"
+			"never"
 		],
 		"variable-name": [
 			true,
