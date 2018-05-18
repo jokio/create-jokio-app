@@ -6,11 +6,11 @@ const typeDefs = `
 
 const resolvers = {
 	Query: {
-		hello: () => 'World'
-	}
+		hello: () => 'World',
+	},
 }
 
 export default {
 	typeDefs,
-	resolvers
+	resolvers,
 }
