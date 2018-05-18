@@ -5,5 +5,5 @@ const port = parseInt(process.env.PORT, 10) || 3000
 
 run(
     express({ port }),
-    nextjs({ pagesDirectory: 'src' })
+    nextjs({ pagesDirectory: 'src' }),
 )
