@@ -4,8 +4,8 @@ import resolvers from './resolvers'
 
 
 const server = new GraphQLServer({
-    typeDefs: './schemas/schema.graphql',
-    resolvers,
+	typeDefs: './schemas/schema.graphql',
+	resolvers,
 })
 
 server.express.use('/voyager', voyagerMiddleware({ endpointUrl: '/' }))
