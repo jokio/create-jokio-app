@@ -1,12 +1,13 @@
-import { run } from 'jokio'
-import { graphql } from 'jokio-graphql'
-import localSchemas from './schemas'
+import { GraphQLServer } from 'graphql-yoga'
+import { express as voyagerMiddleware } from 'graphql-voyager/middleware'
+import resolvers from './resolvers'
 
-const port = parseInt(process.env.PORT, 10) | 3000
-const endpoint = '/'
-const logSuccessMessage = (info) => () => console.log(`GraphQL server started at http://localhost:${info.port}${info.endpoint}`)
 
-run(
-    graphql({ port, localSchemas, endpoint }),
-    logSuccessMessage({ port, endpoint }),
-)
+const server = new GraphQLServer({
+    typeDefs: './schemas/schema.graphql',
+    resolvers,
+})
+
+server.express.use('/voyager', voyagerMiddleware({ endpointUrl: '/' }))
+
+server.start({ port: 4000 }, ({ port }) => console.log(`Server is running on localhost:${port}`))
