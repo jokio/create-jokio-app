@@ -1,7 +1,7 @@
 {
   "name": "create-jokio-app",
   "description": "create jokio apps in one command",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "index.js",
   "license": "MIT",
   "bin": {
