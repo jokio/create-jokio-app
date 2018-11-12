@@ -12,13 +12,11 @@
 		"build": "tsc"
 	},
 	"dependencies": {
-		"graphql-voyager": "1.0.0-rc.19",
+		"graphql-voyager": "1.0.0-rc.26",
 		"graphql-yoga": "1.15.1",
 		"jokio": "0.3.0"
 	},
 	"devDependencies": {
-		"@types/hapi": "17.0.13",
-		"@types/koa": "2.0.46",
 		"@types/jest": "23.3.9",
 		"dotenv": "6.0.0",
 		"fs-extra": "7.0.1",
