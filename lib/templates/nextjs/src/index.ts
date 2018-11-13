@@ -1,9 +1,23 @@
-import { run } from 'jokio'
-import { express, nextjs } from 'jokio-nextjs'
+import * as Express from 'express'
+import * as nextjslib from 'next'
 
-const port = parseInt(process.env.PORT, 10) || 3000
+function run({ port }) {
+    const express = Express()
 
-run(
-    express({ port }),
-    nextjs({ pagesDirectory: 'src' }),
-)
+    const nextApp = nextjslib({
+        dev: true,
+        dir: './src/',
+    })
+
+    const nextHandler = nextApp.getRequestHandler()
+
+    return nextApp.prepare().then(() => {
+        express.get('*', (req, res) => nextHandler(req, res))
+
+        express.listen(port, () => {
+            console.log(`express started at: http://localhost:${port}`)
+        })
+    })
+}
+
+run({ port: 3000 })
