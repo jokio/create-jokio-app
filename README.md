@@ -1,3 +1,6 @@
+# DEPRECIATED. PLEASE USE: [Jok CLI](https://github.com/jokio/jok-cli) `init` command
+
+
 # Create Jokio App
 [![engine: jokio](https://img.shields.io/badge/engine-%F0%9F%83%8F%20jokio-44cc11.svg)](https://github.com/jokio/jokio)
 
